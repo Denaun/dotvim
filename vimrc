@@ -86,15 +86,9 @@ let g:neocomplcache_enable_auto_select = 1
 """ Colors
 
 set background=dark
-"colorscheme elflord
-"colorscheme github
 colorscheme molokai
-"colorscheme solarized      " solarized is set in gvimrc
+" colorscheme solarized      " solarized is set in gvimrc
 
 " Highlight characters after the 80th
 set colorcolumn=80
-" (auto command because gets overwritten by colorscheme changes)
-autocmd BufRead,BufNewFile *
-      \ highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
-      \ | match OverLength /\%>80v.\+/
 

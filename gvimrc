@@ -1,4 +1,5 @@
 " Colorscheme
+set background=dark
 colorscheme solarized
 
 " Workaround for solarized
