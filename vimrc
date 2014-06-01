@@ -1,6 +1,7 @@
 """ Setup/cleaning
 
 " Pathogen Plug-in Manager
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 " Remove ALL auto commands for the current group.
 autocmd!
@@ -26,6 +27,8 @@ source ~/.vim/indent.vim
 
 syntax enable
 filetype plugin indent on
+
+set spell spelllang=en,it spellfile=.spell.utf-8.add
 
 " Disable arrow keys for navigation
 nnoremap <up> <nop>
@@ -86,8 +89,8 @@ let g:neocomplcache_enable_auto_select = 1
 """ Colors
 
 set background=dark
-colorscheme molokai
-" colorscheme solarized      " solarized is set in gvimrc
+" colorscheme molokai
+colorscheme solarized      " solarized is set in gvimrc
 
 " Highlight characters after the 80th
 set colorcolumn=80
