@@ -58,3 +58,6 @@
 [submodule "bundle/vim-as"]
 	path = bundle/vim-as
 	url = https://github.com/Denaun/vim-as.git
+[submodule "bundle/vim-latex-live-preview"]
+	path = bundle/vim-latex-live-preview
+	url = https://github.com/xuhdev/vim-latex-live-preview.git
