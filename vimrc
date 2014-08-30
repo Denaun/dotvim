@@ -89,6 +89,9 @@ let g:neocomplcache_enable_auto_select = 1
 "" vim-latex-live-preview
 let g:livepreview_previewer = 'open -a Preview'
 
+"" vim-easy-align
+nmap <Leader>a :EasyAlign<CR>
+
 """ Colors
 
 set background=dark
