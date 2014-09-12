@@ -37,7 +37,7 @@ noremap ;' :%s///g<Left><Left><Left>
 
 " Colors
 set background=dark
-colorscheme solarized
+silent! colorscheme solarized  " `silent` avoids error during the installation
 
 " Highlight characters after the 80th
 set colorcolumn=80

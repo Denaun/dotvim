@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-echo =\> Checking out Vundle
-git submodule update --init
+echo =\> Cloning Vundle
+git clone https://github.com/gmarik/Vundle.vim.git bundle/Vundle.vim
 
 echo =\> Linking vim directories
 ln -s $PWD/vimrc $HOME/.vimrc
@@ -12,7 +12,7 @@ vim +BundleInstall +qall
 
 echo =\> Compiling Command-T
 cd bundle/Command-T/ruby/command-t/
-ruby extconf.rb
+/usr/bin/ruby extconf.rb
 make
 cd -
 
