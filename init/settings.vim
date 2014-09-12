@@ -1,0 +1,43 @@
+set nocompatible
+
+set showcmd
+set ruler
+set number
+set cursorline
+set cursorcolumn
+set hlsearch
+set incsearch 
+
+set shiftwidth=2
+set tabstop=4
+set softtabstop=2
+set expandtab
+set foldmethod=syntax
+runtime indent.vim
+
+syntax enable
+
+set spell spelllang=en,it spellfile=.spell.utf-8.add
+
+" Disable arrow keys for navigation
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+
+" Command to clear search
+command! C let @/ = ""
+
+" Command to save as su
+command! W :execute ':silent w !sudo tee %' | :edit!
+
+" Shortcuts for S&R
+noremap ;; :s///<Left><Left>
+noremap ;' :%s///g<Left><Left><Left>
+
+" Colors
+set background=dark
+colorscheme solarized
+
+" Highlight characters after the 80th
+set colorcolumn=80

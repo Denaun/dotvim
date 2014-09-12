@@ -1,9 +1,9 @@
 dotvim
 ======
 
-My .vim folder
+My .vim folder.
 
-Remember to `git submodule update --init && git submodule foreach git checkout master` to install the plugins.
-Also some of them (eg: _Command-T_) require to be compiled.
+Remember to run `install.sh` to install and compile the plugins.
 
-Also some plugins require specific setup, like [Syntastic](https://github.com/scrooloose/syntastic) requires `clang` and [Command-T](https://github.com/wincent/Command-T) requires compiling.
+Also some plugins require specific setup, like
+[Syntastic](https://github.com/scrooloose/syntastic) requires `clang`.
