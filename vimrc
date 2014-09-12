@@ -90,7 +90,7 @@ let g:neocomplcache_enable_auto_select = 1
 let g:livepreview_previewer = 'open -a Preview'
 
 "" vim-easy-align
-nmap <Leader>a :EasyAlign<CR>
+vmap <Leader>a <Plug>(EasyAlign)
 
 """ Colors
 
