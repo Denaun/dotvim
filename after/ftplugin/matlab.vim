@@ -1,5 +1,5 @@
 " vim-commentary support
-set commentstring=\%\ %s
+setlocal commentstring=\%\ %s
 
 " Update the numbers on unnumbered or constant-numbered figures.
 " Avoids calls with empty parentheses.

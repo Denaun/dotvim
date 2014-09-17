@@ -7,13 +7,13 @@ echo =\> Linking vim directories
 ln -s $PWD/vimrc $HOME/.vimrc
 ln -s $PWD/gvimrc $HOME/.gvimrc
 
-echo =\> Vundling
+echo =\> Installing plugins
 vim +BundleInstall +qall
 
-echo =\> Compiling Command-T
-cd bundle/Command-T/ruby/command-t/
-/usr/bin/ruby extconf.rb
-make
+echo =\> Compiling and configuring YouCompleteMe
+cd bundle/YouCompleteMe
+./install.sh --clang-completer --system-libclang
 cd -
+cp $PWD/ycm_extra_conf.py $HOME/.ycm_extra_conf.py
 
 echo =\> Done

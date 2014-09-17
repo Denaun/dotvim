@@ -2,6 +2,9 @@
 " Other settings are contained in the init dir and executed at the end of this
 " file.
 
+" Note: Skip initialization for vim-tiny or vim-small.
+if !1 | finish | endif
+
 set nocompatible
 filetype off
 
@@ -14,10 +17,12 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'b4winckler/vim-objc'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'chrisbra/SudoEdit.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Denaun/DoxygenToolkit.vim'
 Plugin 'Denaun/molokai'
 Plugin 'Denaun/vim-as'
 Plugin 'gi1242/vim-multimarkdown'
+Plugin 'honza/vim-snippets'
 Plugin 'jcfaria/Vim-R-plugin'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'kien/rainbow_parentheses.vim'
@@ -27,13 +32,15 @@ Plugin 'MORZorg/vim-sol'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Plugin 'Shougo/neocomplcache.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'tacahiroy/ctrlp-funky'
+Plugin 'toyamarinyon/vim-swift'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-pathogen'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'wincent/Command-T'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'xuhdev/vim-latex-live-preview'
 
 call vundle#end()
@@ -41,4 +48,3 @@ filetype plugin indent on
 
 " Source initialization files
 runtime! init/**.vim
-
