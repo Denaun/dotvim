@@ -19,17 +19,20 @@ syntax enable
 
 set spell spelllang=en,it spellfile=.spell.utf-8.add
 
+" Basic wildignore
+set wildignore+=*.so,*.swp,*.zip,*.exe,*.mex*
+
+" Use ZSH as shell
+set shell=zsh\ -i
+
 " Disable arrow keys for navigation
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
 
-" Command to clear search
+" Command to clear the search highlight
 command! C let @/ = ""
-
-" Command to save as su
-command! W :execute ':silent w !sudo tee %' | :edit!
 
 " Shortcuts for S&R
 noremap ;; :s///<Left><Left>
