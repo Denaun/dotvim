@@ -3,3 +3,5 @@
 *.un~
 .netrwhist
 bundle/*
+
+autoload/plug.vim

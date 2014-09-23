@@ -35,8 +35,8 @@ nnoremap <right> <nop>
 command! C let @/ = ""
 
 " Shortcuts for S&R
-noremap ;; :s///<Left><Left>
-noremap ;' :%s///g<Left><Left><Left>
+noremap ;; :S///<Left><Left>
+noremap ;' :%S///g<Left><Left><Left>
 
 " Colors
 set background=dark

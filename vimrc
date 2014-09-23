@@ -8,40 +8,43 @@ if !1 | finish | endif
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/bundle')
 
-Plugin 'gmarik/Vundle.vim'
+Plug 'altercation/vim-colors-solarized'
+Plug 'b4winckler/vim-objc'
+Plug 'bkad/CamelCaseMotion'
+Plug 'chrisbra/SudoEdit.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Denaun/DoxygenToolkit.vim'
+Plug 'Denaun/molokai'
+Plug 'Denaun/vim-as'
+Plug 'Dewdrops/SearchComplete'
+Plug 'gi1242/vim-multimarkdown', { 'for': 'mmd' }
+Plug 'honza/vim-snippets'
+Plug 'jcfaria/Vim-R-plugin', { 'for': 'r' }
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'klen/python-mode', { 'for': 'python' }
+Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
+Plug 'MORZorg/vim-sol'
+Plug 'plasticboy/vim-markdown', { 'for': 'mkd' }
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'SirVer/ultisnips'
+Plug 'toyamarinyon/vim-swift', { 'for': 'swift' }
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-speeddating'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'Valloric/YouCompleteMe'
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'latex' }
 
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'b4winckler/vim-objc'
-Plugin 'bkad/CamelCaseMotion'
-Plugin 'chrisbra/SudoEdit.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'Denaun/DoxygenToolkit.vim'
-Plugin 'Denaun/molokai'
-Plugin 'Denaun/vim-as'
-Plugin 'gi1242/vim-multimarkdown'
-Plugin 'honza/vim-snippets'
-Plugin 'jcfaria/Vim-R-plugin'
-Plugin 'junegunn/vim-easy-align'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'klen/python-mode'
-Plugin 'majutsushi/tagbar'
-Plugin 'MORZorg/vim-sol'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'SirVer/ultisnips'
-Plugin 'toyamarinyon/vim-swift'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'xuhdev/vim-latex-live-preview'
-
-call vundle#end()
+call plug#end()
 filetype plugin indent on
 
 " Source initialization files

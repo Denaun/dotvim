@@ -1,14 +1,16 @@
 #!/usr/bin/env sh
 
-echo =\> Cloning Vundle
-git clone https://github.com/gmarik/Vundle.vim.git bundle/Vundle.vim
+echo =\> Cloning the plugin manager
+mkdir -p ~/.vim/autoload
+curl -fLo ~/.vim/autoload/plug.vim \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 echo =\> Linking vim directories
 ln -s $PWD/vimrc $HOME/.vimrc
 ln -s $PWD/gvimrc $HOME/.gvimrc
 
 echo =\> Installing plugins
-vim +BundleInstall +qall
+vim +PlugInstall +qall
 
 echo =\> Compiling and configuring YouCompleteMe
 cd bundle/YouCompleteMe
