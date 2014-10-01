@@ -21,18 +21,22 @@ Plug 'Denaun/vim-as'
 Plug 'Dewdrops/SearchComplete'
 Plug 'gi1242/vim-multimarkdown', { 'for': 'mmd' }
 Plug 'honza/vim-snippets'
+Plug 'inkarkat/argtextobj.vim'
 Plug 'jcfaria/Vim-R-plugin', { 'for': 'r' }
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/vim-easy-align'
+Plug 'Keithbsmiley/investigate.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'klen/python-mode', { 'for': 'python' }
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'MORZorg/vim-sol'
 Plug 'plasticboy/vim-markdown', { 'for': 'mkd' }
+Plug 'pycckuu/MatlabFilesEdition', { 'for': 'matlab' }
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'SirVer/ultisnips'
+Plug 'svermeulen/vim-indent-object', { 'branch': 'working' }
 Plug 'toyamarinyon/vim-swift', { 'for': 'swift' }
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'

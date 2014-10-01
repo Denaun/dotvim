@@ -13,7 +13,6 @@ set tabstop=4
 set softtabstop=2
 set expandtab
 set foldmethod=syntax
-runtime indent.vim
 
 syntax enable
 
