@@ -20,6 +20,7 @@ Plug 'Denaun/molokai'
 Plug 'Denaun/vim-as'
 Plug 'Dewdrops/SearchComplete'
 Plug 'gi1242/vim-multimarkdown', { 'for': 'mmd' }
+Plug 'godlygeek/tabular'
 Plug 'honza/vim-snippets'
 Plug 'inkarkat/argtextobj.vim'
 Plug 'jcfaria/Vim-R-plugin', { 'for': 'r' }
@@ -29,9 +30,10 @@ Plug 'junegunn/vim-easy-align'
 Plug 'Keithbsmiley/investigate.vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'klen/python-mode', { 'for': 'python' }
+Plug 'terryma/vim-multiple-cursors'
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'MORZorg/vim-sol'
-Plug 'plasticboy/vim-markdown', { 'for': 'mkd' }
+Plug 'plasticboy/vim-markdown', { 'for': ['mkd', 'mmd'] }
 Plug 'pycckuu/MatlabFilesEdition', { 'for': 'matlab' }
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
@@ -45,8 +47,10 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'Valloric/YouCompleteMe'
-Plug 'xuhdev/vim-latex-live-preview', { 'for': 'latex' }
+Plug 'triglav/vim-visual-increment'
+Plug 'Valloric/YouCompleteMe',
+      \ { 'do': './install.sh --clang-completer --system-libclang' }
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 call plug#end()
 filetype plugin indent on

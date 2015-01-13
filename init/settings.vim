@@ -22,7 +22,7 @@ set spell spelllang=en,it spellfile=.spell.utf-8.add
 set wildignore+=*.so,*.swp,*.zip,*.exe,*.mex*
 
 " Use ZSH as shell
-set shell=zsh\ -i
+set shell=zsh
 
 " Disable arrow keys for navigation
 nnoremap <up> <nop>
@@ -43,3 +43,7 @@ silent! colorscheme solarized  " `silent` avoids error during the installation
 
 " Highlight characters after the 80th
 set colorcolumn=80
+" (auto command because gets overwritten by colorscheme changes)
+autocmd BufRead,BufNewFile *
+      \ highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
+      \ | match OverLength /\%>120v.\+/
